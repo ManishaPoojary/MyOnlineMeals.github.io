@@ -1,0 +1,217 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variable*/
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/*Navigation Bar: Logo and Image*/
+#logo{
+margin: 10px 34px;
+}
+#logo img{
+    height: 9   0px;
+    margin: 3px 6px;
+}
+/*Navigation Bar: List Styling*/
+#navbar{
+    position:absolute;
+}
+#navbar ul{
+    display:flex;
+    font-family:cursive ;
+    align-content: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+display: block;
+padding: 3px 22px;
+border-radius: 20px;
+text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+
+}
+/*Home section*/
+#home{
+    display: flex;
+    flex-direction:column ;
+    padding: 3px 200px;
+    height: 633px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../bg1.jpg') no-repeat center center/cover  ;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home h1{
+    color: aqua;
+    text-align: center;
+    font-family:cursive;
+}
+#home p{
+    color:rgb(255, 0, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:cursive;
+}
+/*Service section*/
+#services{
+    margin: 34px;
+    display: flex;  
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: aqua;
+}
+#services .box img{
+   height: 100px;
+   margin: auto;
+    display: block; 
+   padding: 50px;
+}
+#services.box p{
+    font-family: cursive;
+    font-size: medium;
+}
+#services{}
+#services{}
+
+/*Client Section*/
+
+#client section{
+    position: relative;
+ height: 334px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg') no-repeat center center/cover;                                                                                                                                                                                                                                                                                                                                                          ;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    opacity: 0.89;
+   }
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.client-item{
+    padding: 34px;
+    height: 100px;
+}
+#clients img{
+    height: 120px;
+}
+/*contact section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;                                                                                                                                                                                                                                                                                                                  ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('../contact.jpg') no-repeat center center/cover;
+   }
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+   #contact-box input,
+   #contact-box textarea{
+       width: 100%;
+       padding: 0.5rem;
+       border-radius: 9px;
+       font-size: 1.1rem;
+   }
+   #contact-box form{
+       width: 40%;
+   }
+   #contact-box label{
+   font-size: 1.3rem;
+   font-family: cursive;
+}
+
+   footer{
+       background: black;
+       color:white;
+       padding: 9px 20px;
+   }
+   
+/*Utility classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 33px;
+    padding-bottom: 23px;
+    } 
+    .h-secondary{
+        font-size: 2.8rem;
+        padding: 52px;
+        } 
+        .h-ternary{
+            font-size: 2.8rem;
+            padding: 102px;
+            padding-bottom: 33px;
+            height: 120px;
+            }
+            .h-quatarny{
+                font-size: 3.8rem;
+                padding: 42px;
+                padding-bottom: 78px;
+                } 
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    
+}
